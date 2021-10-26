@@ -16,7 +16,9 @@ services:
       - "6379:6379"
 
   web:
-    build: .
+    build:
+      context: .
+      dockerfile: ./docker/app/DockerFile
     command: bundle exec rails s -p 6969 -b '0.0.0.0'
     ports:
       - "6969:6969"
@@ -27,13 +29,13 @@ services:
       DATABASE_URL: ${DATABASE_URL}
       REDIS_URL: ${REDIS_URL}
 
-    nginx:
-      image: nathan/nginx:0.1
-      container_name: nginx
-      ports:
-          - 80:80
-          - 443:443
-      links:
-          - web
+  nginx:
+    build:
+      context: .
+      dockerfile: ./docker/web/DockerFile
+    ports:
+      - 80:80
+    depends_on:
+      - web
 volumes:
   dbdata:
