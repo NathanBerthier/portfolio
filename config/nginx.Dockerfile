@@ -15,10 +15,10 @@ RUN chown -R www-data:www-data /var/lib/nginx
 EXPOSE 80 443
 
 # add nginx conf to the conf.d
-ADD config/nathanberthier.conf /etc/nginx/conf.d/nathanberthier.conf
+ADD nathanberthier.conf /etc/nginx/conf.d/nathanberthier.conf
 
 # add nginx conf
-ADD config/nathanberthier.conf /etc/nginx/sites-available/nathanberthier
+ADD nathanberthier.conf /etc/nginx/sites-available/nathanberthier
 
 # create symlinks
 RUN ln -s /etc/nginx/sites-available/nathanberthier /etc/nginx/sites-enabled/
