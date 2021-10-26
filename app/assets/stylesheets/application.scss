@@ -1,6 +1,8 @@
 @import 'config/colors';
 @import 'config/fonts';
 
+@import 'components/index';
+
 body {
   color: $black;
   background: $white;
@@ -20,4 +22,9 @@ body.dark-theme {
     color: $black;
     background: $white;
   }
+}
+
+.container {
+  width: 80%;
+  margin: 0px auto;
 }
