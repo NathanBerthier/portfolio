@@ -19,9 +19,9 @@ services:
     build:
       context: .
       dockerfile: ./docker/app/Dockerfile
-    command: bundle exec rails s -p 6969 -b '127.0.0.1'
+    command: bundle exec rails s -p 6969 -b '0.0.0.0'
     ports:
-      - "127.0.0.1:6969:6969"
+      - "6969:6969"
     depends_on:
       - db
       - redis
@@ -37,6 +37,5 @@ services:
       - 80:80
     depends_on:
       - web
-
 volumes:
   dbdata:
