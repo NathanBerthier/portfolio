@@ -28,7 +28,7 @@ services:
       REDIS_URL: ${REDIS_URL}
 
     nginx:
-      image: admat/nginx:0.1
+      image: nathan/nginx:0.1
       container_name: nginx
       ports:
           - 80:80
