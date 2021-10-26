@@ -1,0 +1,23 @@
+@import 'config/colors';
+@import 'config/fonts';
+
+body {
+  color: $black;
+  background: $white;
+}
+
+body.dark-theme {
+  color: $white;
+  background: $black;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: $white;
+    background: $black;
+  }
+  body.light-theme {
+    color: $black;
+    background: $white;
+  }
+}
