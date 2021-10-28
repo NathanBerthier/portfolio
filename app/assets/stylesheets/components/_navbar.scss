@@ -4,10 +4,9 @@ nav {
   align-items: center;
   margin-top: 30px;
   .nav-home {
-    color: $white;
     text-decoration: none;
     font-size: 26px;
-    font-weight: 300;
+    font-weight: 400;
   }
   ul {
     display: flex;
@@ -22,6 +21,7 @@ nav {
     a {
       text-decoration: none;
       transition: opacity 300ms ease;
+      font-weight: 500;
       &:hover {
         opacity: .4;
       }

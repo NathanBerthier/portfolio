@@ -19,10 +19,10 @@ body {
     display: inline;
   }
   li {
-    color: $orange;
+    color: $red;
   }
   a {
-    color: $orange;
+    color: $red;
   }
 }
 
@@ -40,42 +40,6 @@ body.dark-theme {
   }
   a {
     color: $yellow;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    color: $white;
-    background: $black;
-    transition: all 900ms ease;
-    .fa-moon {
-      display: none;
-    }
-    .fa-lightbulb {
-      display: inline;
-    }
-    li {
-      color: $yellow;
-    }
-    a {
-      color: $yellow;
-    }
-  }
-  body.light-theme {
-    color: $black;
-    background: $beige;
-    .fa-lightbulb {
-      display: none;
-    }
-    .fa-moon {
-      display: inline;
-    }
-    li {
-      color: $orange;
-    }
-    a {
-      color: $orange;
-    }
   }
 }
 
