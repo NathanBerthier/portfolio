@@ -12,3 +12,40 @@
     border-radius: 15px;
   }
 }
+
+.last-post {
+  margin-top: 30px;
+  height: 35vh;
+  background: red;
+}
+
+.info {
+  margin-top: 90px;
+  h2 {
+    font-size: 2rem;
+  }
+  ul {
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 15px;
+    margin-bottom: 110px;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: $white !important;
+    place-self: center stretch;
+    background: $grey;
+    img {
+      height: 35px;
+      margin-right: 10px;
+      border-radius: 2px;
+    }
+  }
+}
