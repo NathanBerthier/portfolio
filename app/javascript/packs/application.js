@@ -15,3 +15,8 @@ require("channels")
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+import { toggleDarkMode } from '../darkmode/toggleDarkMode';
+
+document.addEventListener('turbolinks:load', () => {
+  toggleDarkMode();
+});

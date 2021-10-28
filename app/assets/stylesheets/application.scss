@@ -10,22 +10,72 @@
 
 body {
   color: $black;
-  background: $white;
+  background: $beige;
+  transition: all 900ms ease;
+  .fa-lightbulb {
+    display: none;
+  }
+  .fa-moon {
+    display: inline;
+  }
+  li {
+    color: $orange;
+  }
+  a {
+    color: $orange;
+  }
 }
 
 body.dark-theme {
   color: $white;
   background: $black;
+  .fa-moon {
+    display: none;
+  }
+  .fa-lightbulb {
+    display: inline;
+  }
+  li {
+    color: $yellow;
+  }
+  a {
+    color: $yellow;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
   body {
     color: $white;
     background: $black;
+    transition: all 900ms ease;
+    .fa-moon {
+      display: none;
+    }
+    .fa-lightbulb {
+      display: inline;
+    }
+    li {
+      color: $yellow;
+    }
+    a {
+      color: $yellow;
+    }
   }
   body.light-theme {
     color: $black;
-    background: $white;
+    background: $beige;
+    .fa-lightbulb {
+      display: none;
+    }
+    .fa-moon {
+      display: inline;
+    }
+    li {
+      color: $orange;
+    }
+    a {
+      color: $orange;
+    }
   }
 }
 
