@@ -20,3 +20,6 @@ import { toggleDarkMode } from '../darkmode/toggleDarkMode';
 document.addEventListener('turbolinks:load', () => {
   toggleDarkMode();
 });
+
+require("trix")
+require("@rails/actiontext")

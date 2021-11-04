@@ -6,7 +6,8 @@
 @import 'contacts';
 @import 'pages';
 @import 'posts';
-
+@import "trix/dist/trix";
+@import "actiontext";
 
 body {
   color: $black;
