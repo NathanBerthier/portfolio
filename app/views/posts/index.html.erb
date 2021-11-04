@@ -1,1 +1,8 @@
-<h2>Les postes ici</h2>
+<% @posts.each do |post| %>
+  <%= link_to post_path(post) do%>
+    <div class='post-card'>
+      <h2><%= post.title %></h2>
+      <p><%= post.description %></p>
+    </div>
+  <% end %>
+<% end %>
