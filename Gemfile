@@ -48,3 +48,4 @@ gem 'dotenv-rails', groups: [:development, :test]
 gem 'cloudinary', '~> 1.16.0'
 gem 'simple_form'
 gem 'image_processing', '~> 1.2'
+gem 'devise'
