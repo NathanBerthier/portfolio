@@ -10,6 +10,7 @@
 @import "actiontext";
 
 body {
+  margin: 0px;
   color: $black;
   background: $beige;
   transition: all 900ms ease;
@@ -28,6 +29,7 @@ body {
 }
 
 body.dark-theme {
+  margin: 0px;
   color: $white;
   background: $black;
   .fa-moon {

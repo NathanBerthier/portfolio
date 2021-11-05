@@ -21,7 +21,7 @@ RUN apk add --update --virtual \
   git \
   tzdata \
   && rm -rf /var/cache/apk/*
-RUN gem install bundler:2.2.22
+RUN gem install bundler:2.2.28
 
 WORKDIR /app
 COPY . /app/
