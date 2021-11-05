@@ -1,8 +1,10 @@
 .home-head {
-  margin-top: 90px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 60% 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+  justify-items: end;
   h1 {
     font-size: 2.5rem;
     font-weight: 500;
@@ -11,12 +13,13 @@
     width: 350px;
     border-radius: 15px;
   }
-}
-
-.last-post {
-  margin-top: 30px;
-  height: 35vh;
-  background: red;
+  .last-post {
+    justify-self: start;
+    width: 450px;
+  }
+  a {
+    text-decoration: none;
+  }
 }
 
 .info {
