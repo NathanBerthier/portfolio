@@ -16,9 +16,11 @@ require("channels")
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 import { toggleDarkMode } from '../darkmode/toggleDarkMode';
+import { changePostClass } from '../post/changePostClass';
 
 document.addEventListener('turbolinks:load', () => {
   toggleDarkMode();
+  changePostClass();
 });
 
 require("trix")

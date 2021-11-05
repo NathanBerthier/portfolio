@@ -1,3 +1,39 @@
 // Place all the styles related to the posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.banner {
+  height: 350px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin: 50px 0px 80px 0px;
+  h2 {
+    font-size: 5rem;
+    font-weight: bold;
+    color: $white;
+  }
+}
+
+.post {
+  h1 {
+    font-size: 2.5rem;
+  }
+  blockquote {
+    border: 0 solid $yellow;
+    border-left-width: 0.3em;
+    margin-left: 0.3em;
+    padding-left: 0.6em;
+    border-radius: 3px;
+  }
+  figure {
+    text-align: center;
+  }
+  img {
+    height: 350px;
+    border-radius: 8px;
+  }
+}
