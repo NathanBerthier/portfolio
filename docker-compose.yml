@@ -19,7 +19,7 @@ services:
     build:
       context: .
       dockerfile: ./docker/app/Dockerfile
-    command: bundle exec rails s -e production -p 6969 -b '0.0.0.0'
+    command: bundle exec rails s -p 6969 -b '0.0.0.0'
     ports:
       - "6969:6969"
     depends_on:
